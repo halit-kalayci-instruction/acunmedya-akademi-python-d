@@ -75,3 +75,59 @@ print(  1==1 and 5<3 or 10==10 and 5>=6 )
 print( ( 1==1 and 2>5 ) or 6>=6 and ( 10>5 or 5 == 5 ) )
 
 print(not 1==1)
+
+
+# reference,value type
+# döngüler
+# karar blokları
+# fonksiyonlar
+print("**** 23.02 *****")
+students = [ "Ahmet","Berfin","Alisa","Ayşe" ]
+print(students[3]) #indexler 0dan başlar
+# built-in
+students.append("Fatih")
+print(students)
+#value type - reference type
+a = 10
+b = a
+b += 50
+print(a) #10
+print(b) #60
+# listelerin reference type olması durumu..
+students2 = students
+students2.append("Fatma")
+print(students) # "Ahmet","Berfin","Alisa","Ayşe","Fatma" -> Referans Tip
+print(students2) # "Ahmet","Berfin","Alisa","Ayşe","Fatma"
+
+### karar blokları
+
+# belirli bir şart sağlandığında ilgili satırın execute edilmesi durumudur
+age = 18
+# indentation
+# koddaki scope (kapsam) kavramını uygulamayı
+# 1-N satır arası kod çalıştırır.
+# ! => Her if bloğu yalnızca 1 adet koşul çalıştırır.
+# 
+# if 
+# if else
+# if elif else 
+if age >= 18:
+    print("Kullanıcı reşit")
+if age == 18:
+    print("Kullanıcı tam 18 yaşında.")
+else: # bu bloktaki hiç bir koşul sağlanmadı.
+    print("Kullanıcı reşit değil.")
+print("3. print") #main scope -> {}
+
+###
+
+
+
+
+#----
+#oop
+#modules
+#pip
+
+#---
+#yapay zeka için python # numpy,pandas,matplotlib -> kurulumlar
