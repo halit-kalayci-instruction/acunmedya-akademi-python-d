@@ -121,7 +121,57 @@ print("3. print") #main scope -> {}
 
 ###
 
+## döngüler
+# belirli bir iterasyon ile kodun tekrar execute edilmesi isteniyorsa 
+# i => iterasyon,index => her bir iterasyonda o anki veriye verilen takma ad
+for i in range(5):
+    print(i)
+    print("a")
+print("****")
+for i in range(5,10):
+    print(i)
+print("*****")
+for i in range(5,51,5):
+    print(i)
+#statik
+#dinamik
+my_list = ["a","b","c","d"] # veritabanından,dosyadan vs okunduğunu düşünelim..
+for obj in my_list:
+    print(obj)
+text = "Merhaba"
+for char in text:
+    print(char)
+#
+#while [koşul] - sağlandığı sürece tekrar ediyor.
+#while 10 == 10: # sonsuz döngü - infinite loop -- CTRL + C
+    #print("while çalıştı..")
+a=0
+while a < 10:
+    print(a)
+    a+=1
 
+user_input = input("Lütfen bir değer giriniz. Çıkmak için q giriniz.")
+while user_input != "q":
+    print(f"Girdiğiniz değer: {user_input}")
+    user_input = input("Lütfen bir değer giriniz. Çıkmak için q giriniz.")  
+    
+
+for i in range(10):
+    if i == 5:
+        continue # iterasyona bu adımı atlayarak devam et.
+    print(i)
+print("*****")
+for i in range(10):
+    if i == 5:
+        break # iterasyonu bu adımdan itibaren tamamen durdur
+    print(i)
+##
+
+# fonksiyonlar
+
+
+
+#
 
 
 #----
