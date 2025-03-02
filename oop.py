@@ -29,3 +29,4 @@ car.increase_speed(50)
 
 car1 = Car("Honda") # ilgili classın yapıcı methodunu çağırır (constructor)
 car1.start()
+
