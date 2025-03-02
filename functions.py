@@ -20,3 +20,27 @@ price5 = calculate_tax(500) #
 
 print(price1)
 print(price2+50)
+
+print("*****")
+def sum(a,b):
+    return a+b
+
+print(sum(1,2))
+print(sum(5,10))
+
+def sum2(*args):
+    result = 0
+    for number in args:
+        result += number
+    return result
+
+print(sum2(1,2))
+print(sum2(5,3,1,2))
+print(sum2(1))
+
+# **kwargs => Araştıralım.
+
+# lambda functions -> Tek satırlık fonksiyonlar için bir syntax alternatifi
+topla = lambda a,b: a+b
+print(topla(5,10))
+#
